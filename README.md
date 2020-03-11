@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Neyðarsími 
+
+React 
+
+.Net Core
+
+Sqlite, MS SQL Server 
 
 ## Available Scripts
 
