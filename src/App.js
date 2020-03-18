@@ -1,27 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
+//import logo from './logo.svg';
 import './App.css';
-import Header from './Pages/Component/header';
-//import Footer from './Pages/Component/footer';
-import styled from 'styled-components'; 
 
+export default class App extends Component{
+  /*constructor() {
+    super();
+    this.state = { users: [] };
+  }
 
-function App() {
-  return (
-    <div> 
-      <Header/>
-        <Container>
-            <p>Hello World</p>
-        </Container>
-    
-    </div>
-  );
+  componentDidMount() {
+    fetch('/list/1')
+      .then(res => {
+        console.log(res);
+      });
+    }
+
+    render(){
+      return (
+        <div className="App">
+          <h1>Users</h1>
+          {this.state.users.map(user => 
+          <div key = {user.id}> user: {user.name}</div> )}        
+        </div>
+      );
+    }*/
+
+  
+  state = {
+     loading : true
+  };
+  
+  async componentDidMount() {
+    const url = "http://apis.is/lottery/vikingalotto";
+    const response =  await fetch(url); 
+    const data =  await response.json(); 
+    console.log(data); 
+  }
+
+  render() {
+   return (
+      <div>
+        {this.state.loading ? <div>loading...</div> : <div> person..</div>}
+      </div>
+   );
+  }
 }
-
-export default App;
-
-const Container = styled.div`
-  max-width: 1010px;
-  padding: 26px 20px;
-  width: 100%;
-  margin: 20px auto;
-`;
