@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 export default class Mybody extends Component{
-    constructor(){
+    /*constructor(){
         super();
         this.state = {
                 name : "Arni Ingi Johannesson",
@@ -30,7 +30,7 @@ export default class Mybody extends Component{
                 </ul>
             </div>
         );   
-    }
+    }*/
 }
 
 //export default Mybody; 

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-//import url from './fetchURL';
-import MyBody from './MyBody';
+import FetchUrl from './FetchUrl';
+import Header from './Pages/Core/Component/header';
+//import Header from './Pages/Component/nav';
+//import MyBody from './MyBody';
 import './App.css';
 
 class App extends Component{
@@ -11,7 +13,8 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <MyBody/>
+        <Header/>
+        <FetchUrl/>
       </div>
     )
   }
